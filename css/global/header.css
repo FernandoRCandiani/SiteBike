@@ -21,17 +21,19 @@
 }
 
 .header-menu a {
-    color: var(--cor-1);
+    color: var(--cor-0);
     display: inline-block;
     padding: 16px 0px;
     font-size: 18px;
     position: relative;
+    font-family: "Poppins";
+    font-weight: 400;
 }
 
 .header-menu a:after {
     content: "";
     display: block;
-    background: var(--cor-1);
+    background: var(--cor-0);
     width: 0px;
     height: 2px;
     margin-top: 4px;

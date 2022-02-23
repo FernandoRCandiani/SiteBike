@@ -17,22 +17,14 @@
     padding-bottom: 200px;
 }
 
-.introducao-titulo {
+.introducao h1 {
     color: var(--cor-0);
-    font-size: 64px;
-    line-height: 1.125;
     margin-bottom: 32px;
-    font-family: "Poppins";
-    font-weight: 600;
 }
 
-.introducao-texto {
+.introducao p {
     color: var(--cor-5);
-    font-size: 24px;
-    line-height: 1.5;
     margin-bottom: 20px;
-    font-family: "Roboto";
-    font-weight: 400;
 }
 
 .introducao img {

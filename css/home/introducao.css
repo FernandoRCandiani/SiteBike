@@ -1,15 +1,12 @@
 .introducao-bg {
-    background: var(--cor-12) url(../../img/dec/bottom-left.svg) no-repeat bottom 40px left 20px;
+    background: var(--cor-12);
     box-shadow: inset 0px -120px var(--cor-0);
 }
 
 .introducao {
-    max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
-    padding: 0px 20px;
-    margin: 0 auto;
 }
 
 .introducao-conteudo {
@@ -33,15 +30,6 @@
     border-radius: 4px;
 }
 
-@media (max-width: 1200px) {
-    .introducao-titulo {
-        font-size: 48px;
-    }
-
-    .introducao-texto {
-        font-size: 18px;
-    }
-}
 
 @media (max-width: 800px) {
     .introducao-bg {
@@ -59,8 +47,7 @@
         padding-bottom: 0px;
     }
 
-    .introducao-titulo {
-        font-size: 32px;
+    .introducao h1 {
         margin-bottom: 16px;
     }
     

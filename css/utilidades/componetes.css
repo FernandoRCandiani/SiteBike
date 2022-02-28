@@ -12,7 +12,7 @@
     display: inline-block;
     text-transform: uppercase;
     background: linear-gradient( var(--cor-p1), var(--cor-p2));
-    box-shadow: 0 1px 2px var(--cor-5);
+    box-shadow: 0 1px 2px rgb(0 0 0 /10%);
     border-radius: 4px;
     padding: 16px 32px;
     font: 600 1.125rem/1.35 "Poppins", sans-serif;
@@ -23,13 +23,13 @@
     background: linear-gradient( var(--cor-p2), var(--cor-p3));
 }
 
-.segundo {
+.secunario {
     color: var(--cor-2);
     background: var(--cor-10);
     box-shadow: none;
 }
 
-.segundo:hover {
+.secunario:hover {
     background: var(--cor-9);
 }
 

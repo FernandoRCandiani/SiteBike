@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, p, ul, blockquote{
+h1, h2, h3, p, ul, blockquote, dd{
     padding: 0px;
     margin: 0px;
 }

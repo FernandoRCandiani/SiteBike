@@ -1,0 +1,121 @@
+.bicicleta-bg {
+    background: var(--cor-11);
+}
+
+.bicicleta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.bicicleta-titulo {
+    grid-column: 1 / -1;
+}
+
+.bicicleta-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.bicicleta-imagens img:first-child {
+    min-width: 100%;
+}
+
+.bicicleta-imagens > img {
+    cursor: pointer;
+    flex: 1;
+    min-width: 200px;
+}
+
+.bicicleta-conteudo > p{
+    margin-bottom: 32px;
+}
+
+.bicicleta-compra {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 8px 10px;
+    align-items: center;
+    justify-items: start;
+    margin-bottom: 40px;
+}
+
+.bicicleta-compra a {
+    grid-row: 1 / 3;
+}
+
+.bicicleta-compra span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--cor-12);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.bicicleta-conteudo h2 {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.bicicleta-informacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.bicicleta-informacoes,
+.bicicleta-ficha {
+    background: var(--cor-12);
+    border-radius: 4px;
+    padding: 32px;
+}
+
+.bicicleta-informacoes img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.bicicleta-informacoes h3 {
+    margin-bottom: 8px;
+}
+
+.bicicleta-ficha li {
+    display: flex;
+    border-bottom: 1px solid var(--cor-11);
+    justify-content: space-between;
+    padding: 4px 0px;
+}
+
+.bicicleta-ficha li:nth-child(6) {
+    border-bottom: none;
+}
+
+.bicicleta-ficha span {
+    color: var(--cor-6);
+}
+
+@media (max-width: 800px) {
+    .bicicleta {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bicicleta-imagens {
+        grid-row: 3 ;
+    }
+}
+
+@media (max-width: 400px) {
+    .bicicleta-informacoes,
+    .bicicleta-compra {
+        grid-template-columns: 1fr;
+    }
+}

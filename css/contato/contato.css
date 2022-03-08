@@ -14,8 +14,8 @@
 }
 
 .contato-dados {
-    background: var(--cor-12);
     border-radius: 4px 0px 0px 4px;
+    background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
 }
 
 .contato-dados h2 {
@@ -64,8 +64,8 @@
 }
 
 .contato-formulario {
-    background: var(--cor-0);
     border-radius: 0px 4px 4px 0px;
+    background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
 }
 
 @media (max-width: 800px) {
@@ -90,6 +90,7 @@
 
     .contato-dados {
         border-radius: 4px 4px 0px 0px;
+        background: var(--cor-12);
     }
 
     .contato-formulario {

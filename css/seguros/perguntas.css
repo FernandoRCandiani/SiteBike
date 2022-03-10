@@ -14,15 +14,19 @@
     background: var(--cor-1);
 }
 
-.perguntas dt {
+.perguntas button {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
     cursor: pointer;
 }
 
-.perguntas dt::before {
+.perguntas button::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -30,7 +34,7 @@
     background: var(--cor-p1)
 }
 
-.perguntas dt::after {
+.perguntas button::after {
     content: "";
     display: inline-block;
     width: 14px;
@@ -40,11 +44,20 @@
     transform: rotate(180deg);
 }
 
-.perguntas dt:hover::after {
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
     transform: rotate(0deg);
 }
 
-.ativa dd {
+.perguntas dd {
+    display: none;
+}
+
+.perguntas dd.ativa {
+    display: block;
+}
+
+.perguntas dd {
     max-width: 80ch;
     padding-top: 16px;
     padding-left: 20px;
